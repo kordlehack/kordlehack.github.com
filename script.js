@@ -352,8 +352,7 @@ function returnResponse() {
   var li = document.createElement('li');
   
   var url_hack = getInput().replace("https://kordle.kr/?code=","");
-  var url_hack = getInput().replace("Https://Kordle.kr/?code=","");
-  var url_hack = getInput().replace("https://Kordle.kr/?code=","");
+
   var decodedString  = atob(url_hack);
   var decodedString_re  = engTypeToKor(decodedString.toLowerCase());
   li.textContent = decodedString_re;
