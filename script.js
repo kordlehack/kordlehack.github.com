@@ -102,7 +102,6 @@
 
             tclone.addClass('freeze-column')
                 .attr('id', tbl.attr("id") + '_column_clone')
-            // .css('margin', 0);
 
             $.each(tclone.data(), function (i) {
                 tclone.removeAttr("data-" + i);
