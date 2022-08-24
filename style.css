@@ -21,5 +21,6 @@ table.table td.ready {
 }
 
 body {
-    margin-top: 1em,;
+    padding: 1.5em;
+    font-family: 'Nanum Myeongjo', serif;
 }
