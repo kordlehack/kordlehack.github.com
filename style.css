@@ -1,25 +1,50 @@
+/* Navigation Bar */
+.navbar{
+  padding: 20px 10px 20px 0px;
+  background-color: #000000;
+  transition: all ease 0.4s;
+}
+.navbar-brand{
+  font-size: 22px;
+  color: white !important;
+}
+.navbar .navbar-nav li a{
+  font-size: 16px;
+  color: white;
+}
+
+/* Animation */
+.animate{
+  padding: 0px 10px 0px 0px;
+  transition: all ease 0.4s;
+}
+
+/* Jumbotron */
+.jumbotron{
+  margin-top: 110px;
+}
 table.table {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 table.table thead th {
-    text-align: center;
-    vertical-align: middle;
+  text-align: center;
+  vertical-align: middle;
 }
 table.table thead th.sortable {
-    cursor: pointer;
+  cursor: pointer;
 }
 table.table thead tr:nth-child(1) th:nth-child(2){
-    min-width: 110px;
+  min-width: 110px;
 }
 table.table th:not(:last-child),
 table.table td:not(:last-child) {
-    border-right: 1px solid #ccc;
+  border-right: 1px solid #ccc;
 }
 
 table.table td.ready {
-    box-shadow: 0 0 0 2px #66afe9 inset
+  box-shadow: 0 0 0 2px #66afe9 inset
 }
 
 body {
-    margin-top: 1em,;
+  margin-top: 1em,;
 }
