@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -28,7 +28,7 @@
         <div class="collapse navbar-collapse" id="resNav">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="./index.html">무역품 DB</a></li>
-                <li><a href="./hvtime.html">항구 시간</a></li>
+                <li><a href="./hvtime.html">교역소 리셋 시간</a></li>
                 <li><a href="#">주요 항해사</a></li>
                 <li><a href="#">무역 루트</a></li>
             </ul>
@@ -37,34 +37,49 @@
 
     <!-- Jumbotron -->
     <div class="container">
-        
+
         <div class="row">
             <div class="col-xs-12">
-             
+
                 <div class="jumbotron">
+                    <div class="dropdown" style="margin-left: 15px;">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            도시 선택
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#" onclick="h_time(52,00,'세비야')">세비야</a></li>
+                            <li><a href="#" onclick="h_time(55,00,'파루')">파루</a></li>
+                            <li><a href="#" onclick="h_time(49,25,'포르투')">포르투</a></li>
+             
+                        </ul>
+                    </div>
                     <div class="text-center">
                         <h2><span id="city"></span></h2>
                         <br>
                     </div>
                     <div id="count" class="text-center">
-                    <script src="./item.js"></script>
-                    <script>	
-                        h_time(1,49,0,0,00,"제노바");
-                    </script>
+                        <script src="./item.js"></script>
+                     
+                        <script>
+                            h_time(55,00,'브레멘');
+                        </script>
                     </div>
                 </div>
             </div>
         </div>
     </div> <!-- End of Jumbotron -->
-    
+
     <!-- Simple Article -->
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-              
-                <span ><strong >History</strong></span>
-                <li style="margin-top: 10px;">이 기능은 정상 동작하지 않습니다.</li>
-                <li>현재 일부 국가를 대상으로 시간을 측정 중 입니다.</li>
+
+                <span><strong>History</strong></span>
+                <li style="margin-top: 10px;">현재 기능 테스트 중 입니다.</li>
+                <li>완성전까지는 일부 국가의 정보만 제공합니다.</li>
+                <li>약 10초의 오차가 발생할 수 있습니다.</li>
             </div>
         </div> <!-- End of Simple Article -->
         <!-- partial -->
