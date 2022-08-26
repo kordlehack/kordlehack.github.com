@@ -60,7 +60,7 @@ function h_time(user_min,user_sec, city) {
     for(var i=0; i < dateDB.length;i++){
         console.log(dateDB[i]);
     }
-
+    
     timer = setInterval(function () {
         const today = new Date().getTime();
         const gap = dday - today;
@@ -76,7 +76,11 @@ function h_time(user_min,user_sec, city) {
         }else {            
             dday = new Date(dateDB[count]).getTime();             
         }
-        document.getElementById("count").innerHTML = city+" 교역소 갱신까지 " + min + "분 " + sec + "초 남았습니다.";
+        if(min <= 0) {
+            document.getElementById("count").innerHTML = city+" 데이터 갱신 중...";
+        }else {
+            document.getElementById("count").innerHTML = city+" 교역소 갱신까지 " + min + "분 " + sec + "초 남았습니다.";
+        }
       //  console.log("실동작:"+dateDB[count]);
     }, 1000);
 }
