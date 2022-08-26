@@ -68,7 +68,7 @@ function h_time(user_min,user_sec, city) {
         const hour = Math.floor((gap % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const min = Math.floor((gap % (1000 * 60 * 60)) / (1000 * 60));
         const sec = Math.floor((gap % (1000 * 60)) / 1000);
-
+        var loading_time = 1;
         if (min <= 0 && sec <= 0) {
             count=count+1; 
             dday = new Date(dateDB[count]).getTime();    
@@ -77,7 +77,8 @@ function h_time(user_min,user_sec, city) {
             dday = new Date(dateDB[count]).getTime();             
         }
         if(min <= 0) {
-            document.getElementById("count").innerHTML = city+" 데이터 갱신 중...";
+            document.getElementById("count").innerHTML = city+" 데이터 갱신 중...("+loading_time+")";
+            loading_time = parseInt(loading_time)+1;
         }else {
             document.getElementById("count").innerHTML = city+" 교역소 갱신까지 " + min + "분 " + sec + "초 남았습니다.";
         }
