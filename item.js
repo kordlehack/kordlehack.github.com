@@ -76,6 +76,7 @@ function h_time(user_min,user_sec, city) {
         }else {            
             dday = new Date(dateDB[count]).getTime();             
         }
-        document.getElementById("count").innerHTML = city+" 교역소 갱신까지 " + min + "분 " + sec + "초 남았습니다."+dateDB[count];
+        document.getElementById("count").innerHTML = city+" 교역소 갱신까지 " + min + "분 " + sec + "초 남았습니다.";
+      //  console.log("실동작:"+dateDB[count]);
     }, 1000);
 }
