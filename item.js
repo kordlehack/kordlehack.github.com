@@ -47,7 +47,7 @@ function h_time(user_min,user_sec, city) {
                 my_hour= "00";
                 i_day++;
             }
-            dateDB[i] = "2022-" + i_month + "-" + i_day + ":" + my_hour + ":" + my_min + ":00";
+            dateDB[i] = "2022-" + i_month + "-" + i_day + ":" + my_hour + ":" + my_min + ":"+user_sec;
             //console.log("짝 :" + my_min);
         }
     }
@@ -56,6 +56,10 @@ function h_time(user_min,user_sec, city) {
 
     let dday = new Date(dateDB[0]).getTime();
     let count = 0;
+
+    for(var i=0; i < dateDB.length;i++){
+        console.log(dateDB[i]);
+    }
 
     timer = setInterval(function () {
         const today = new Date().getTime();
@@ -66,10 +70,12 @@ function h_time(user_min,user_sec, city) {
         const sec = Math.floor((gap % (1000 * 60)) / 1000);
 
         if (min <= 0 && sec <= 0) {
-            count=count+1;
-            dday = new Date(dateDB[count]).getTime();     
+            count=count+1; 
+            dday = new Date(dateDB[count]).getTime();    
             console.log(count+"...." +dateDB[count]);      
+        }else {            
+            dday = new Date(dateDB[count]).getTime();             
         }
-        document.getElementById("count").innerHTML = city+" 교역소 갱신까지 " + min + "분 " + sec + "초 남았습니다.";
+        document.getElementById("count").innerHTML = city+" 교역소 갱신까지 " + min + "분 " + sec + "초 남았습니다."+dateDB[count];
     }, 1000);
 }
