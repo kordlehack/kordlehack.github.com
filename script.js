@@ -13,3 +13,19 @@ var $table = $('#table');
 	$(trBoldBlue).on("click", "tr", function (){
 			$(this).toggleClass("bold-blue");
 	});
+
+    
+document.addEventListener("dragover", function(e){
+    e = e || window.event;
+    var dragX = e.pageX, dragY = e.pageY;
+
+    console.log("X: "+dragX+" Y: "+dragY);
+}, false);
+
+//  jQuery
+
+$("body").bind("dragover", function(e){
+    var dragX = e.pageX, dragY = e.pageY;
+
+    console.log("X: "+dragX+" Y: "+dragY);
+});
