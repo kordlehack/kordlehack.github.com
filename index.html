@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html >
+<html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, 
@@ -8,67 +9,131 @@
   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.0/bootstrap-table.min.css'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="./style.css">
-
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .myDiv {
+      padding-top: 20px;
+      height: 140px;
+      background-color: rgb(230, 230, 230);
+      text-align: center;
+    }
+  </style>
 </head>
+
 <body>
-<!-- partial:index.partial.html -->
-<section class="navigation">
-  <div class="nav-container">
-    <div class="brand">
-      <img src="./dolphin.png" width="50px">&nbsp;&nbsp;<a href="#!">돌고래 보호단</a>
+  <!-- partial:index.partial.html -->
+  <section class="navigation">
+    <div class="nav-container">
+      <div class="brand">
+        <img src="./dolphin.png" width="50px">&nbsp;&nbsp;<a href="./index.html">돌고래 보호단</a>
+      </div>
+      <nav>
+        <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+        <ul class="nav-list">
+          <li>
+            <a href="./d.html">교역품 DB</a>
+          </li>
+          <li>
+            <a href="./timer.html">교역소 갱신 타이머</a>
+          </li>
+          <li>
+            <a href="#!">무역 루트</a>
+            <ul class="nav-dropdown">
+              <li>
+                <a href="./trade/1.html">오스만 삼각 무역</a>
+              </li>
+              <li>
+                <a href="#!">캐비아 무역</a>
+              </li>
+              <li>
+                <a href="#!">서양 대포 무역</a>
+              </li>
+              <li>
+                <a href="#!">서양 대포 (카리브)</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#!">항해 시간 계산기</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
-      <ul class="nav-list">
-        <li>
-          <a href="./index.html">교역품 DB</a>
-        </li>
-        <li>
-          <a href="./timer.html">교역소 갱신 타이머</a>
-        </li>
-        <li>
-          <a href="#!">무역 루트</a>
-          <ul class="nav-dropdown">
-            <li>
-              <a href="./trade/1.html">오스만 삼각 무역</a>
-            </li>
-            <li>
-              <a href="#!">캐비아 무역</a>
-            </li>
-            <li>
-              <a href="#!">서양 대포 무역</a>
-            </li>
-            <li>
-              <a href="#!">서양 대포 (카리브)</a>
-            </li>
-          </ul>
-        </li>
+  </section>
 
-        <li>
-          <a href="#!">항해 시간 계산기</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</section>
-
-<article>
-  <h2>교역품 DB</h2>
-  <li>최고 마진은 지속 업데이트 중 입니다. </li>
-  <li>[2022-08-30] ㄱ교역품 업데이트 완료</li>
-
-</article>
-<!-- partial -->
-  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-  <script  src="./script.js"></script>
+  <article>
+    <h2>돌고래 보호단</h2>
+    <li>최고 마진은 지속 업데이트 중 입니다. </li>
+    <li>[2022-08-30] 상단원 업데이트를 완료했습니다.</li>
+    <br>
+    <style>
+      table {
+        width: 100%;
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+      }
+      
+      td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+      
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+      </style>
+      
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+</table>
+  </article>
+  <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.0/bootstrap-table.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.9.1/extensions/editable/bootstrap-table-editable.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.9.1/extensions/export/bootstrap-table-export.js'></script>
+  <script
+    src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.9.1/extensions/editable/bootstrap-table-editable.js'></script>
+  <script
+    src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.9.1/extensions/export/bootstrap-table-export.js'></script>
   <script src='https://rawgit.com/hhurz/tableExport.jquery.plugin/master/tableExport.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.9.1/extensions/filter-control/bootstrap-table-filter-control.js'></script><script  src="./script.js"></script>
-
+  <script
+    src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.9.1/extensions/filter-control/bootstrap-table-filter-control.js'></script>
+  <script src="./script.js"></script>
 </body>
+
 </html>
