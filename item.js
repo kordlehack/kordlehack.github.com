@@ -76,7 +76,7 @@ function h_time(user_min,user_sec, city) {
         }else {            
             dday = new Date(dateDB[count]).getTime();             
         }
-        if(min <= 0) {
+        if(min < 0) {
             document.getElementById("count").innerHTML = city+" 데이터 갱신 중...("+loading_time+")";
             loading_time = parseInt(loading_time)+1;
         }else {
