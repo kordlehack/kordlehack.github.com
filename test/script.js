@@ -19,10 +19,10 @@
     $('#nav-toggle').on('click', function() {
       this.classList.toggle('active');
     });
-  }); // end DOM ready
-})(jQuery); // end jQuery
+  }); 
+})(jQuery); 
 
-//exporte les données sélectionnées
+
 var $table = $('#table');
     $(function () {
         $('#toolbar').find('select').change(function () {
@@ -38,6 +38,7 @@ var $table = $('#table');
 			$(this).toggleClass("bold-blue");
 	});
 
+
     
 document.addEventListener("dragover", function(e){
     e = e || window.event;
@@ -46,7 +47,6 @@ document.addEventListener("dragover", function(e){
     console.log("X: "+dragX+" Y: "+dragY);
 }, false);
 
-//  jQuery
 
 $("body").bind("dragover", function(e){
     var dragX = e.pageX, dragY = e.pageY;
