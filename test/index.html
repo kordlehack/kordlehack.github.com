@@ -14,7 +14,7 @@
 <section class="navigation">
   <div class="nav-container">
     <div class="brand">
-      <img src="./dolphin.png" width="50px">&nbsp;<a href="#!">돌고래 보호단</a>
+      <img src="./dolphin.png" width="50px">&nbsp;&nbsp;<a href="#!">돌고래 보호단</a>
     </div>
     <nav>
       <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
@@ -67,7 +67,7 @@
 <article>
   <h2>교역품 DB</h2>
   <li>최고 마진은 지속 업데이트 중 입니다. 자료 구하시는대로 전달 바래요</li>
-  <li>마지막 업데이트: 2022-08-29</li>
+  <li>마지막</li>
 
   <table id="table" 
         data-toggle="table"
@@ -80,10 +80,10 @@
    <thead>
      <tr>
        <th data-field="city" data-sortable="true"  rowspan="2" style="width: 150px;">품목</th>
-       <th data-field="item" data-sortable="true"  rowspan="2">도시</th>
-       <th data-field="type" data-sortable="true"  rowspan="2">분류</th>
-       <th data-field="low"  rowspan="2">시세</th>
-       <th data-field="high" data-sortable="true"  colspan="2">명산품</th>
+       <th data-field="item" data-sortable="true"  rowspan="2">분류</th>
+       <th data-field="type" data-sortable="true"  rowspan="2">판매 도시</th>
+       <th data-field="low"  rowspan="2">명산품</th>
+       <th data-field="high" data-sortable="true" colspan="2" >시세</th>
        <th data-field="condition"  colspan="2">조건</th>
      </tr>
      <tr>
@@ -95,11 +95,12 @@
    </thead>
    <tbody>
      <script>
+      Item("가지", "에도", "식료품", "O", "미확인", "미확인", "미확인", "미확인");
+
        //미확인 케이스 : Item("그단스크", "전기석", "보석", "미확인", "미확인", "X", "미확인", "미확인");
  
        //그단스크
-       Item("가지", "에도\n호버", "보석", "극동남아시아", "명산품", "미확인", "미확인", "미확인");
-       Item("그단스크", "호박", "보석", "미확인", "미확인", "X", "미확인", "미확인");
+      /*Item("그단스크", "호박", "보석", "미확인", "미확인", "X", "미확인", "미확인");
        Item("그단스크", "모피", "섬유", "미확인", "미확인", "X", "미확인", "미확인");
        Item("그단스크", "사탕무", "식료품", "미확인", "미확인", "X", "미확인", "미확인");
        Item("그단스크", "공단", "직물", "미확인", "미확인", "X", "미확인", "미확인");
@@ -594,7 +595,7 @@
        Item("히혼", "돼지", "가축", "196", "93", "X", "공업 5", "없음");
        Item("히혼", "돼지고기", "식료품", "125", "109", "X", "없음", "없음");
        
- 
+ */
  
        function Item(city, item, type, low, high, uniqu, con2, con1) {
          document.write(`
