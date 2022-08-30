@@ -37,7 +37,7 @@ function navigation(){
         <ul class="list-group">
         <li class="list-group-item">카사블랑카<span class="badge">전 국가 5%</span></li>
         <li class="list-group-item">보르사이드<span class="badge">전 국가 5%</span></li>
-        <li class="list-group-item">제노바<span class="badge">전 국가 10%</span></li>
+        <li class="list-group-item">다음 주는 카리브, 아프리카 쪽 공략합시다.</span></li>
         </ul>
 
         <strong>세부 시세 정보</strong><br>
