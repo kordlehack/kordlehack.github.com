@@ -9,7 +9,8 @@
   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.0/bootstrap-table.min.css'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/nav.js"></script>
   <style>
     .myDiv {
       padding-top: 20px;
@@ -27,36 +28,8 @@
       <div class="brand">
         <img src="./dolphin.png" width="50px">&nbsp;&nbsp;<a href="./index.html">돌고래 보호단</a>
       </div>
-      <nav>
-        <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
-        <ul class="nav-list">
-          <li>
-            <a href="./d.html">교역품 DB</a>
-          </li>
-          <li>
-            <a href="./timer.html">교역소 갱신 타이머</a>
-          </li>
-          <li>
-            <a href="#!">무역 루트</a>
-            <ul class="nav-dropdown">
-              <li>
-                <a href="./trade/1.html">오스만 삼각 무역</a>
-              </li>
-              <li>
-                <a href="#!">캐비아 무역</a>
-              </li>
-              <li>
-                <a href="#!">서양 대포 무역</a>
-              </li>
-              <li>
-                <a href="#!">서양 대포 (카리브)</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#!">항해 시간 계산기</a>
-          </li>
-        </ul>
+      <nav id="navi">
+        <script>navigation();</script>
       </nav>
     </div>
   </section>
@@ -64,7 +37,7 @@
   <article>
 
     <div class="container">
-      <h2>돌고래 보호단</h2>
+      <br>
       <div class="panel panel-default">
         <div class="panel-heading">돌고래 보호단은 교역 DB와 교역소 갱신 타이머 등을 제공합니다. </div>
         <div class="panel-body">인도양 3서버 기준으로 작성 및 개발되는 사이트라 타 서버 분들과는 다소 차이가 있을 수 있습니다. 
@@ -76,13 +49,9 @@
    
     </div>
     
-    <strong>데이터 베이스</strong><br></div>
-<div class="container">
-  <ul class="list-group">
-    <li class="list-group-item">교역소 DB <span class="badge">140</span></li>
-    <li class="list-group-item">교역소 갱신 시간<span class="badge">9</span></li>
-    <li class="list-group-item">무역 루트<span class="badge">1</span></li>
-  </ul>
+   </div>
+<div class="container" id="main_list"> 
+  <script>main_list();</script>
 </div>
 
   </article>
@@ -97,7 +66,8 @@
   <script src='https://rawgit.com/hhurz/tableExport.jquery.plugin/master/tableExport.js'></script>
   <script
     src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.9.1/extensions/filter-control/bootstrap-table-filter-control.js'></script>
-  <script src="./script.js"></script>
+
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

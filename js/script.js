@@ -1,3 +1,4 @@
+
 (function($) { // Begin jQuery
   $(function() { // DOM ready
     // If a link has a dropdown, add sub menu toggle.
@@ -53,3 +54,6 @@ $("body").bind("dragover", function(e){
 
     console.log("X: "+dragX+" Y: "+dragY);
 });
+
+
+let db_count =0;

@@ -9,12 +9,13 @@
   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.0/bootstrap-table.min.css'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/nav.js"></script>
   <style>
     .myDiv {
       padding-top: 20px;
       height: 140px;
-      background-color: rgb(230, 230, 230);
+      background-color: rgb(95, 164, 255);
       text-align: center;
     }
   </style>
@@ -27,77 +28,101 @@
       <div class="brand">
         <img src="./dolphin.png" width="50px">&nbsp;&nbsp;<a href="./index.html">돌고래 보호단</a>
       </div>
-      <nav>
-        <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
-        <ul class="nav-list">
-          <li>
-            <a href="./d.html">교역품 DB</a>
-          </li>
-          <li>
-            <a href="./timer.html">교역소 갱신 타이머</a>
-          </li>
-          <li>
-            <a href="#!">무역 루트</a>
-            <ul class="nav-dropdown">
-              <li>
-                <a href="./trade/1.html">오스만 삼각 무역</a>
-              </li>
-              <li>
-                <a href="#!">캐비아 무역</a>
-              </li>
-              <li>
-                <a href="#!">서양 대포 무역</a>
-              </li>
-              <li>
-                <a href="#!">서양 대포 (카리브)</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#!">항해 시간 계산기</a>
-          </li>
-        </ul>
+      <nav id="navi">
+        <script>navigation();</script>
       </nav>
     </div>
   </section>
 
   <article>
-    <div class="dropdown">
-      <button class="dropbtn">도시 선택</button>
-      <div class="dropdown-content">
-        <a href="#">--- 서양대포 ---</a>
-        <a href="#" onclick="h_time(22,00,'세비야')">세비야</a>
-        <a href="#" onclick="h_time(17,07,'바르셀로나')">바르셀로나</a>
-        <a href="#" onclick="h_time(10,22,'마르세유')">마르세유</a>
-        <a href="#" onclick="h_time(27,8,'제노바')">제노바</a>
-        <a href="#" onclick="h_time(24,25,'피사')">피사</a>
-        <a href="#">--- 북해 ---</a>
-        <a href="#" onclick="h_time(25,00,'파루')">파루</a>
-        <a href="#" onclick="h_time(29,25,'포르투')">포르투</a>
-        <a href="#" onclick="h_time(24,49,'런던')">런던</a>
-        <a href="#" onclick="h_time(23,32,'암스테르담')">암스테르담</a>
-        <a href="#" onclick="h_time(17,20,'함브루크')">함브루크</a>
-        <a href="#" onclick="h_time(21,10,'흐로닝언')">흐로닝언</a>
-        <a href="#" onclick="h_time(15,00,'투니스')">투니스</a>
-        <a href="#">--- 카리브해 ---</a>
-        <a href="#" onclick="h_time(13,33, '산티아고')">산티아고</a>
-      </div>
-    </div>
-    <br><br>
     <div class="myDiv">
-      <h2 id="city"></h2>
-      <p id="count">준비 중 입니다.</p>
+      <h2 id="city" style="color: #fff;"></h2>
+      <p id="count" style="color: #fff;">준비 중 입니다.</p>
     </div>
     <br>
 
-    <li>현재 일부 항구 정보만 제공하고 있습니다.</li>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      
+      #myInput {
+        background-image: url('https://www.w3schools.com/howto/searchicon.png');
+        background-position: 10px 12px;
+        background-repeat: no-repeat;
+        width: 100%;
+        font-size: 16px;
+        padding: 12px 20px 12px 40px;
+        border: 1px solid #ddd;
+        margin-bottom: 12px;
+      }
+      
+      #myUL {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      #myUL li a {
+        border: 1px solid #ddd;
+        margin-top: -1px; /* Prevent double borders */
+        background-color: #f6f6f6;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        color: black;
+        display: block
+      }
+      
+      #myUL li a:hover:not(.header) {
+        background-color: #eee;
+      }
+      </style>
+     
+    
+    
 
-    <script src="./item.js"></script>
+    
+    <script src="./js/item.js"></script>
     <script>
       h_time(13, 33, '산티아고');
     </script>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="항구 이름으로 검색">
 
+<ul id="myUL">
+  <li><a href="#" onclick="h_time(22,00,'세비야')">세비야</a></li>
+  <li><a href="#" onclick="h_time(17,07,'바르셀로나')">바르셀로나</a></li>
+  <li><a href="#" onclick="h_time(10,22,'마르세유')">마르세유</a></li>
+  <li><a href="#" onclick="h_time(27,8,'제노바')">제노바</a></li>
+  <li><a href="#" onclick="h_time(24,25,'피사')">피사</a></li>
+  <li><a href="#" onclick="h_time(25,00,'파루')">파루</a></li>
+  <li> <a href="#" onclick="h_time(29,25,'포르투')">포르투</a></li>
+  <li> <a href="#" onclick="h_time(24,49,'런던')">런던</a> </li>
+  <li>  <a href="#" onclick="h_time(23,32,'암스테르담')">암스테르담</a> </li>
+  <li> <a href="#" onclick="h_time(17,20,'함브루크')">함브루크</a> </li>
+  <li> <a href="#" onclick="h_time(21,10,'흐로닝언')">흐로닝언</a> </li>
+  <li> <a href="#" onclick="h_time(15,00,'투니스')">투니스</a> </li>
+  <li> <a href="#" onclick="h_time(13,33, '산티아고')">산티아고</a> </li>
+</ul>
 
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
     </div>
   </article>
   <!-- partial -->
@@ -111,7 +136,7 @@
   <script src='https://rawgit.com/hhurz/tableExport.jquery.plugin/master/tableExport.js'></script>
   <script
     src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.9.1/extensions/filter-control/bootstrap-table-filter-control.js'></script>
-  <script src="./script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
