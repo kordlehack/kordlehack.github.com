@@ -33,6 +33,13 @@ function navigation(){
   
   function main_list (){
         document.getElementById('main_list').innerHTML = `  
+        <strong>보유 항구 관세 설정</strong><br>
+        <ul class="list-group">
+        <li class="list-group-item">카사블랑카<span class="badge">전 국가 5%</span></li>
+        <li class="list-group-item">보르사이드<span class="badge">전 국가 5%</span></li>
+        <li class="list-group-item">제노바<span class="badge">전 국가 10%</span></li>
+        </ul>
+
         <strong>세부 시세 정보</strong><br>
         <ul class="list-group">
           <li class="list-group-item"><a href="./trade/caviar.html">캐비아</a><span class="badge">by 생강공원</span></li>
