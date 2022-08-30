@@ -33,14 +33,14 @@ function navigation(){
   
   function main_list (){
         document.getElementById('main_list').innerHTML = `  
-        <strong>보유 항구 관세 설정</strong><br>
+        <strong>상단 보유항 관세 현황</strong><br>
         <ul class="list-group">
         <li class="list-group-item">카사블랑카<span class="badge">전 국가 5%</span></li>
         <li class="list-group-item">보르사이드<span class="badge">전 국가 5%</span></li>
         <li class="list-group-item">다음 주는 카리브, 아프리카 쪽 공략합시다.</span></li>
         </ul>
 
-        <strong>세부 시세 정보</strong><br>
+        <strong>세부 시세표</strong><br>
         <ul class="list-group">
           <li class="list-group-item"><a href="./trade/caviar.html">캐비아</a><span class="badge">by 생강공원</span></li>
           <li class="list-group-item"><a href="./trade/civet.html">시벳</a><span class="badge">by 생강공원</span></li>
@@ -50,8 +50,8 @@ function navigation(){
 
         <strong>데이터 베이스 현황</strong><br>
         <ul class="list-group">
-          <li class="list-group-item">교역소 DB <span class="badge">140</span></li>
-          <li class="list-group-item">교역소 갱신 시간<span class="badge">9</span></li>
+          <li class="list-group-item"><a href="./d.html">교역소 DB</a><span class="badge">ㄱ-ㄷ</span></li>
+          <li class="list-group-item"><a href="./timer.html">교역소 갱신 시간</a><span class="badge">13</span></li>
           <li class="list-group-item">무역 루트<span class="badge">1</span></li>
         </ul>
         
