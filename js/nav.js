@@ -32,10 +32,21 @@ function navigation(){
   
   
   function main_list (){
-        document.getElementById('main_list').innerHTML = `  <strong>데이터 베이스</strong><br>
+        document.getElementById('main_list').innerHTML = `  
+        <strong>세부 시세 정보</strong><br>
+        <ul class="list-group">
+          <li class="list-group-item"><a href="./trade/caviar.html">캐비아</a><span class="badge">by 생강공원</span></li>
+          <li class="list-group-item"><a href="./trade/civet.html">시벳</a><span class="badge">by 생강공원</span></li>
+          <li class="list-group-item"><a href="./trade/perfume.html">향수</a><span class="badge">by 생강공원</span></li>
+          <li class="list-group-item"><a href="./trade/daffodil.html">수선화</a><span class="badge">by 생강공원</span></li>
+        </ul>
+
+        <strong>데이터 베이스 현황</strong><br>
         <ul class="list-group">
           <li class="list-group-item">교역소 DB <span class="badge">140</span></li>
           <li class="list-group-item">교역소 갱신 시간<span class="badge">9</span></li>
           <li class="list-group-item">무역 루트<span class="badge">1</span></li>
-        </ul>`;
+        </ul>
+        
+        `;
   }
