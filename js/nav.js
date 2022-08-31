@@ -14,13 +14,7 @@ function navigation(){
             <a href="./trade/1.html">오스만 삼각 무역</a>
           </li>
           <li>
-            <a href="#!">캐비아 무역</a>
-          </li>
-          <li>
-            <a href="#!">서양 대포 무역</a>
-          </li>
-          <li>
-            <a href="#!">서양 대포 (카리브)</a>
+            <a href="./trade/2.html">우리땅 무역</a>
           </li>
         </ul>
       </li>
