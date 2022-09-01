@@ -34,6 +34,9 @@ function h_time(user_min,user_sec, city) {
                 my_hour= "00";
                 i_day++;
             }
+            if(i_day < 10){
+                i_day = "0" + i_day;
+            }
             dateDB[i] = "2022-" + i_month + "-" + i_day + ":" + my_hour + ":" + my_min + ":"+user_sec;
             //console.log("홀 :" + my_min);
         } else {            
