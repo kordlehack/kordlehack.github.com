@@ -19,6 +19,10 @@ function h_time(user_min,user_sec, city) {
     if(my_hour < 10){
         my_hour  = "0"+my_hour;
     }
+    
+            if(i_day < 10){
+                i_day = "0" + i_day;
+            }
     dateDB[0] = "2022-" + i_month + "-" + i_day + ":" + my_hour + ":" + my_min + ":"+user_sec;
 
     for (var i = 1; i < 49; i++) {
@@ -33,9 +37,6 @@ function h_time(user_min,user_sec, city) {
             if(my_hour >= 24){
                 my_hour= "00";
                 i_day++;
-            }
-            if(i_day < 10){
-                i_day = "0" + i_day;
             }
             dateDB[i] = "2022-" + i_month + "-" + i_day + ":" + my_hour + ":" + my_min + ":"+user_sec;
             //console.log("홀 :" + my_min);
