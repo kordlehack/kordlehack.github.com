@@ -84,9 +84,9 @@ let fullNextDate = yyyy + '-' + mm + '-' + dd;
         <ul class="list-group">
           <li class="list-group-item"><a href="./d.html">도적</a><span class="badge">56</span></li>
           <li class="list-group-item"><a href="./timer.html">야만용사</a><span class="badge">224</span></li>
-          <li class="list-group-item"><a href="./timer.html">위상</a><span class="badge">224</span></li>
-          <li class="list-group-item"><a href="./timer.html">위상</a><span class="badge">224</span></li>
-          <li class="list-group-item"><a href="./timer.html">위상</a><span class="badge">224</span></li>
+          <li class="list-group-item"><a href="./timer.html">원소술사</a><span class="badge">1</span></li>
+          <li class="list-group-item"><a href="./timer.html">드루이드</a><span class="badge">15</span></li>
+          <li class="list-group-item"><a href="./timer.html">강령술사</a><span class="badge">67</span></li>
         </ul>
         <strong><font color="#ffffff">세부 시세표</font></strong><br>
         <ul class="list-group">
