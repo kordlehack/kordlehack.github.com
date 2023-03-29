@@ -80,9 +80,12 @@ let fullNextDate = yyyy + '-' + mm + '-' + dd;
         <li class="list-group-item">전염자 아바샤<span id="count" class="badge"></span></li>
         </ul>
 
-        <strong><font color="#ffffff">데이터 베이스</font></strong><br>
+        <strong><font color="#ffffff">직업 데이터 베이스</font></strong><br>
         <ul class="list-group">
-          <li class="list-group-item"><a href="./d.html">고유 (Unique)</a><span class="badge">56</span></li>
+          <li class="list-group-item"><a href="./d.html">도적</a><span class="badge">56</span></li>
+          <li class="list-group-item"><a href="./timer.html">야만용사</a><span class="badge">224</span></li>
+          <li class="list-group-item"><a href="./timer.html">위상</a><span class="badge">224</span></li>
+          <li class="list-group-item"><a href="./timer.html">위상</a><span class="badge">224</span></li>
           <li class="list-group-item"><a href="./timer.html">위상</a><span class="badge">224</span></li>
         </ul>
         <strong><font color="#ffffff">세부 시세표</font></strong><br>
