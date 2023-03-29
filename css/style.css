@@ -93,7 +93,9 @@ nav ul li ul li a {
   position: relative;
   display: inline-block;
 }
-
+body {
+  background-color:#262626;
+}
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
@@ -196,3 +198,6 @@ article {
   margin: 0 auto;
   padding: 10px;
 }
+
+
+
