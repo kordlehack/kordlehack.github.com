@@ -23,15 +23,38 @@ function navigation(){
       </li>
     </ul>`;
   }
-  
+
+<script>
+  let thisDate = new Date();
+  let day = thisDate.getDay();
+  let calcDate = thisDate.getDate() - day + ((day == 0 ? 1 : 8) + 5); 
+  let nextDate = new Date(thisDate.setDate(calcDate));
+let yyyy = nextDate.getFullYear();
+let mm = nextDate.getMonth() + 1;
+let dd = nextDate.getDate();
+
+let fullNextDate = yyyy + '-' + mm + '-' + dd;
+  document.write(fullNextDate);
+
+  const dday = new Date(fullNextDate+":02:00:00+0900").getTime();
+    
+    setInterval(function() {
+      const today = new Date().getTime();
+      const gap = dday - today;
+      const day = Math.floor(gap / (1000 * 60 * 60 * 24));
+      const hour = Math.floor((gap % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const min = Math.floor((gap % (1000 * 60 * 60)) / (1000 * 60));
+      const sec = Math.floor((gap % (1000 * 60)) / 1000);
+    
+          document.getElementById("count").innerHTML = "day + "일 " + hour + "시간 " + min + "분 " + sec + "남음";
+    }, 1000);
+</script>
   
   function main_list (){
         document.getElementById('main_list').innerHTML = `  
-        <strong>상단 보유항 관세 현황</strong><br>
+        <strong>월드</strong><br>
         <ul class="list-group">
-        <li class="list-group-item">카사블랑카<span class="badge">전 국가 5%</span></li>
-        <li class="list-group-item">보르사이드<span class="badge">전 국가 5%</span></li>
-        <li class="list-group-item">다음 주는 카리브, 아프리카 쪽 공략합시다.</span></li>
+        <li class="list-group-item">아바샤<span id="count" class="badge"></span></li>
         </ul>
 
         <strong>세부 시세표</strong><br>
