@@ -25,7 +25,7 @@ function navigation(){
   }
 
   function main_list (){
-        let thisDate = new Date();
+       let thisDate = new Date();
   let day = thisDate.getDay();
   let calcDate = thisDate.getDate() - day + ((day == 0 ? 1 : 8) + 5); 
   let nextDate = new Date(thisDate.setDate(calcDate));
@@ -46,9 +46,8 @@ let fullNextDate = yyyy + '-' + mm + '-' + dd;
       const min = Math.floor((gap % (1000 * 60 * 60)) / (1000 * 60));
       const sec = Math.floor((gap % (1000 * 60)) / 1000);
     
-          document.getElementById("count").innerHTML = "day + "일 " + hour + "시간 " + min + "분 " + sec + "남음";
+          document.getElementById("count").innerHTML = day + "일 " + hour + "시간 " + min + "분 " + sec + "남음";
     }, 1000);
-      
         document.getElementById('main_list').innerHTML = `  
         <strong>월드</strong><br>
         <ul class="list-group">
