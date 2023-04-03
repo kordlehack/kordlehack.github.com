@@ -1,70 +1,130 @@
 <!DOCTYPE html>
+<html lang="ko" >
+<head>
+  <meta charset="UTF-8">
+  <title>꽃중년 게임단</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+<!DOCTYPE html>
 <html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, 
-  maximum-scale=1.0, minimum-scale=1.0">
-  <title>꽃중년 게임단:디아블로4</title>
-  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.0/bootstrap-table.min.css'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <script src="./js/nav.js"></script>
-  <style>
-    .myDiv {
-      padding-top: 20px;
-      height: 140px;
-      background-color: rgb(230, 230, 230);
-      text-align: center;
-    }
-  </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Bootstrap javascript-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </head>
+  
+<body class="bg">
+  <header>
+    <nav id="mynav" class="navbar navbar-  expand-lg navbar-dark fixed-top">
+        <div class="container py-2">
+                <a class="navbar-brand mt-1" href="#" id="img">
+                  <img src="./logo.png" width="50px">꽃중년 게임단
+                </a>
+                <button id="boton-menu" class="navbar-toggler" onclick="blurEffect()" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
 
-<body>
-  <!-- partial:index.partial.html -->
-  <section class="navigation">
-    <div class="nav-container">
-      <div class="brand">
-        <img src="./logo.png" width="50px">&nbsp;&nbsp;<a href="./index.html">꽃중년 게임단</a>
-      </div>
-      <nav id="navi">
-        <script>navigation();</script>
-      </nav>
-    </div>
-  </section>
+                <div class="collapse navbar-collapse opacity" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mr-2">
+                            <a id="page" class="nav-link letras page" href="#">Link 1</a>
+                        </li>
+                        <li class="nav-item mr-2">
 
-  <article>
+                            <a class="nav-link letras" href="#">Link 2</a>
 
-    <div class="container">
-      <br>
-      <div class="panel panel-default">
-        <div class="panel-heading">꽃중년 게임단</div>
-        <div class="panel-body">꽃중년 게임단은 지인 외 일반 클랜원은 모집하지 않습니다.<br>
-      </div>
-      
-   
-    </div>
-    
-   </div>
-<div class="container" id="main_list"> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+     </nav>
+  </header> 
+  <script  src="./script.js"></script>
   <script>main_list();</script>
-</div>
+  
+   <!-- Content of the body, we need a div for add blur class-->
+  <br><br><br>
+  
+  <script>main_list();</script>
+  <div id="blurEffect-content-page">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 text-white text-center mt-4">
+    <!--  TIMER PANEL -->
+  <div class="timer">
+    <div class="timer-session">
+      <div class="timer-session-action">
+        <div class="timer-session-pause"></div>
+        <div class="timer-session-pause"></div>
+        <div class="timer-session-ellipse">...</div>            
+      </div>
+      <div class="timer-session-log">
+        <p class="subtitle alpha">2023년 6월 2일 새벽 1시까지</p>
+      </div>
+    </div>
+    <div class="timer-tick">
+      <div class="timer-digits">
+        <div class="timer-digit-group">
+          <div class="timer-digit" id="day_o">00</div>
+          <div class="timer-colon">:</div>
+          <p class="timer-unit alpha">DAYS</p>
+        </div>
+        <div class="timer-digit-group">
+          <div class="timer-digit" id="day_h">00</div>
+          <div class="timer-colon">:</div>
+          <p class="timer-unit alpha">HOURS</p>
+        </div>
+        <div class="timer-digit-group">
+          <div class="timer-digit" id="day_t">00</div>
+          <div class="timer-colon">:</div>
+          <p class="timer-unit alpha">MINUTES</p>
+        </div>
+        <div class="timer-digit-group">
+          <div class="timer-digit" id="day_s">00</div>
+          <p class="timer-unit alpha">SECONDS</p>
+        </div>
+      </div>
+    </div>
+  </div>
+        <p></p>
 
-  </article>
-  <!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.0/bootstrap-table.js'></script>
-  <script
-    src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.9.1/extensions/editable/bootstrap-table-editable.js'></script>
-  <script
-    src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.9.1/extensions/export/bootstrap-table-export.js'></script>
-  <script src='https://rawgit.com/hhurz/tableExport.jquery.plugin/master/tableExport.js'></script>
-  <script
-    src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.9.1/extensions/filter-control/bootstrap-table-filter-control.js'></script>
+  <div class="timer" >
+    <div class="timer-session" style="text-align: left;">
+       월드보스 타이머       
+    </div>
+    <div class="timer-session" style="text-align: left;">
+    
+      전염자 아샤바: <code id="count">Checking...</code>
+      </div>
+    </div>
+  </div>
+        </div>
+        
+      </div>
 
-    <script src="./js/script.js"></script>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+        <footer class="py-3 bg-blck">
+            <div class="container">
+                <p class="m-0 text-center text-white">Discord @</p>
+            </div>
+            <!-- /.container -->
+        </footer>
 </body>
+<!-- partial -->
 
+</body>
 </html>
