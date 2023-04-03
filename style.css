@@ -191,7 +191,7 @@
   }
   @media (max-width: 360px) {
 	.timer-digit-group {
-	  width: 35%;
+	  width: 24%;
 	}
   
 	.timer-colon {
