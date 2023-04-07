@@ -45,7 +45,18 @@ function height(){
 function main_list (){
   let thisDate = new Date();
 let day = thisDate.getDay();
-let calcDate = thisDate.getDate() - day + ((day == 6 ? 13: 6) + 0); 
+let day_time = thisDate.getHours();
+let day_plus =0;
+if(day==6){
+  if(day_time > 1){
+    day_plus = 13;
+  }else {
+    day_plus = 6;
+  }
+}else {
+  day_plus = 6;
+}
+let calcDate = thisDate.getDate() - day + day_plus + 0; 
 let nextDate = new Date(thisDate.setDate(calcDate));
 let yyyy = nextDate.getFullYear();
 let mm = nextDate.getMonth() + 1;
@@ -89,7 +100,7 @@ setInterval(function() {
  document.getElementById("day_s").innerHTML = sec2;
 document.getElementById("count").innerHTML = day + "일 " + hour + "시간 " + min + "분 " + sec + "초 남음";
  //document.getElementById("dlt").innerHTML = day2 + "일 " + hour2 + "시간 " + min2 + "분 "+ sec2 + "초";
- //document.getElementById("no").innerHTML = day3 + "일 " + hour3 + "시간 " + min3 + "분 "+ sec3 + "초";
+ document.getElementById("det").innerHTML = day3 + "일 " + hour3 + "시간 " + min3 + "분 "+ sec3 + "초 남음";
 }, 1000);
 
 }
